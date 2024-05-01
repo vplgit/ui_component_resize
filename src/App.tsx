@@ -8,7 +8,7 @@ const YourComponent = () => {
     { width: '100%', height: 200 }, // Updated width to '100%'
   ])
 
-  const handleResize = (index, direction, ref, d) => {
+  const handleResize = (index: any, _direction: any, ref: any, _d: any) => {
     const newSizes = [...sizes]
     newSizes[index] = { width: ref.style.width, height: ref.style.height }
     setSizes(newSizes)
