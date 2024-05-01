@@ -22,7 +22,7 @@ const YourComponent = () => {
             <Resizable
               key={0}
               size={sizes[0]}
-              onResize={(e, direction, ref, d) =>
+              onResize={(_e, direction, ref, d) =>
                 handleResize(0, direction, ref, d)
               }
               className="border w-1/2 flex border-gray-300 m-5"
@@ -50,7 +50,7 @@ const YourComponent = () => {
             <Resizable
               key={1}
               size={sizes[1]}
-              onResize={(e, direction, ref, d) =>
+              onResize={(_e, direction, ref, d) =>
                 handleResize(1, direction, ref, d)
               }
               className="border border-gray-300 m-5"
@@ -80,7 +80,7 @@ const YourComponent = () => {
           <Resizable
             key={2}
             size={sizes[2]}
-            onResize={(e, direction, ref, d) =>
+            onResize={(_e, direction, ref, d) =>
               handleResize(2, direction, ref, d)
             }
             className="border border-gray-300 m-5 overflow-hidden flex flex-wrap"
